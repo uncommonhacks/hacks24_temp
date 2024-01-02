@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Uncommon Makes 2023</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+}
+
+button {
+  font-family: Avenir, sans-serif;
+}
+
+.button {
+  border: none;
+  color: #f6d282;
+  padding: 1rem 4rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #f6d282;
+  color: #481b8a;
+  margin-top: 2rem;
+  border-radius: 2rem;
+}
+
+.button1:hover {
+  background-color: #481b8a;
+  color: #f6d282;
+}
+
+header {
+  background-color: #e8b280;
+  background-size: cover;
+  background-blend-mode: darken;
+  padding: 5.5rem 8vw 3.5rem;
+  text-align: center;
+  font-size: 35px;
+  color: #481b8a;
+}
+
+nav {
+  float: left;
+  width: 50%;
+  padding: 0 2vw;
+
+}
+
+article {
+  float: left;
+  padding: 0 2vw;
+  width: 50%;
+}
+
+section {
+  background: #1a8888;
+  padding: 2rem 3vw;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+  height: auto;
+}
+
+footer {
+  background-color: #481b8a;
+  padding: 10px;
+  text-align: center;
+  color: #f6d282;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.collapsible {
+  background-color: #f6d282;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #d67cd1;
+  color: #f6d282;
+}
+
+.content {
+  padding: 0 18px;
+  background-color: #481b8a;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: #e8b280;
+}
+
+.info-text {
+    display: inline-block;
+    margin: 1rem auto 1rem;
+    text-align: "left";
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bullet {
+    color: #1a8888;
+    font-weight: bold;
+    margin-right: 0.25rem;
+}
+
+h2 {
+   margin: 0;
+   margin-top: 1.5rem;
+   font-size: 50px;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight:normal;
+  color: #1a8888;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight:normal;
+  margin: 0.75rem;
+}
+
+h5 {
+  font-size: 15px;
+  line-height: 0.25;
+  font-weight:normal;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+#a_header {
+  color: #d67cd1
+}
+
+#a_header:link {
+ text-decoration: none;
+ font-weight: bold;
+}
+
+#a_header:hover {
+  color: #1a8888;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#a_body {
+  color: black
+}
+
+#a_body:link {
+ text-decoration: none;
+}
+
+#a_body:hover {
+  color: #f6d282;
+  font-weight: bold;
+}
+
+#slogan {
+  font-style: italic;
+  color: #1a8888;
+}
+
+body {
+  margin: 0;
+  background-color: #666;
+}
+li {
+  font-size: 15px;
+}
+
+.list-container {
+    text-align: left !important;
+    background-color: #481b8a;
+    color:#f9f5ec;
+    line-height: 1.5;
+    padding: 0.25rem;
+    border-radius: 1rem;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <a  href="https://uncommonhacks.com" ><img id = "logo" src="images/faviconFilled.png"></a>
+  <h2>Uncommon Hacks 2024</h2>
+    <!-- <h3 id="slogan">THE UCHICAGO DESIGNATHON</h3> -->
+
+    <h4>The Polsky Exchange</h4>
+    <h4>March 23-24, 2024</h4>
+    <button class="button button1" onclick="location.href='https://makes2023.uncommonhacks.com/signup.html'"><b>Register now!</b></button>
+
+
+  <h3 class="bold">About</h3>
+
+  <p>
+    Welcome to Uncommon Hacks, the official hackathon of the University of Chicago! Spend 24 hours working on a project and meeting cool people in this one-of-a-kind experience! In our 2024 edition of Hacks, we're excited to bring you the biggest event since the pandemic, including the overnight component that makes for a truly unforgettable experience.
+    Although Hacks will have prizes, we place more emphasis on learning and collaboration than some kind of competitive aspect. So even if you've never coded before, please do sign up! A successful Hacks team needs people with different skill sets, and if you would like to learn how to code, we'll have workshops to help you do so.
+  </p>
+
+  <h3 class="bold">How does it work?</h3>
+  <p class="info-text" >
+    There are three steps:
+    </p>
+    <div class="list-container">
+    <ol>
+        <li>Arrive at the hackathon and make teams.</li>
+        <li>Work on your project for 24 hours. Take a break with some activities.</li>
+        <li>Present your project to industry judges.</li>
+    </ol>
+    </div>
+    <!-- <p class="info-text" >
+    We would love for you to attend our workshops, but you can also feel free to just start working! One more note is that although you’re more than welcome to come to the event with a team already formed, we do have a team size limit of 5 people.
+  </p> -->
+
+  <h3 class="bold">Judging</h3>
+
+  <p class="info-text">
+    Once you've gotten a chance to work on your project for a couple of hours, you will be assigned a table, and will get to present your work during the project showcase. Then, we will choose winners for different categories and award our prizes.
+  </p>
+  <h3 class="bold">Schedule</h3>
+  <h4 class="bold">Friday Workshop Night</h4>
+    <div class="list-container">
+      <ul>
+          <li>6:00 – workshop 1</li>
+          <li>7:00 – workshop 2</li>
+    </div>
+  <h4 class="bold">Day 1</h4>
+    <div class="list-container">
+      <ul>
+          <li>9:00 - doors open, check-in, team formation, breakfast</li>
+          <li>10:00 - opening ceremony</li>
+          <li>10:30 - hacking begins</li>
+          <li>12:00 - lunch</li>
+          <li>3:00 - Google Cloud workshop</li>
+          <li>4:00 - puzzle hunt</li>
+          <li>6:00 - dinner</li>
+          <li>9:00 - “Who did it?!” mystery competition</li>
+    </div>
+  <h4 class="bold">Day 2</h4>
+  <div class="list-container">
+    <ul>
+      <li>12:00 - midnight snack </li>
+      <li>8:00 - morning meditation</li>
+      <li>9:00 - breakfast</li>
+      <li>10:00 - projects due, project fair</li>
+      <li>11:00 - judge deliberation</li>
+      <li>12:00 - awards, closing ceremony</li>
+      <li>12:30 - event ends!</li>
+    </ul>
+</div>
+
+  <h3 class="bold">About Uncommon Hacks</h3>
+  <p class="info-text">Uncommon Hacks is an RSO that organizes coding-related competitions on campus. Our main event is a 24-hour hackathon called Hacks, which happens during the first weekend of the spring quarter. We love cool tech projects and can't wait to see what you create! 😁
+    </p>
+</header>
+
+<section>
+  <nav>
+    <button type="button" class="collapsible"><span class="bullet">+</span> Is Makes only for undergraduate students? </button>
+    <div class="content">
+      <p>No, high school or university students are welcome to come join us!</p>
+    </div>
+    <button type="button" class="collapsible"><span class="bullet">+</span> Do I have to be on a team? </button>
+    <div class="content">
+      <p>No, although we recommend it.</p>
+    </div>
+    <button type="button" class="collapsible"><span class="bullet">+</span> How big can teams be? </button>
+    <div class="content">
+      <p>Up to five people.</p>
+    </div>
+    <button type="button" class="collapsible"><span class="bullet">+</span> So I don't have to stay the night?</button>
+    <div class="content">
+      <p>You do not, although we may have limitations on when people can enter and exit the venue during the night.</p>
+    </div>
+    <p></p>
+  </nav>
+
+  <article>
+    <button type="button" class="collapsible"><span class="bullet">+</span> Do I have to pay for anything? </button>
+    <div class="content">
+      <p>Nope!</p>
+    </div>
+    <button type="button" class="collapsible"><span class="bullet">+</span> Did you say prizes? </button>
+    <div class="content">
+      <p>Affirmative, we will be handing out various prizes to the top submissions.</p>
+    </div>
+    <button type="button" class="collapsible"><span class="bullet">+</span> What should I bring?</button>
+    <div class="content">
+      <p>Just a laptop and your (uncommon) ideas.
+       </p>
+    </div>
+  </article>
+</section>
+
+<footer>
+  <h1>Questions? Contact us at <a href="mailto:celery@uncommonhacks.com" style="color:#1a8888">celery@uncommonhacks.com</a>!</h1>
+</footer>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
+
+</body>
+</html>
+
