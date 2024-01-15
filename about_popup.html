@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- popup windows for tiles. for now, just "about" -->
+<html>
+    <head>
+        <meta name="About popup for uncommon hacks 2024 webiste" 
+        content="HTML, CSS, Vanilla Javascript">
+        <title>About</title>
+        <link rel="stylesheet" type="text/css" href="stylePopups.css">
+    </head>
+
+    <body>
+        <div class="container" id="blur">
+            <div class="content">
+                <h2> About </h2>
+                <img src="">
+                <a href="#" onclick="toggle()"> Open </a>
+            </div>
+        </div>
+        <div id="popup">
+            <h2>  About </h2>
+            <p> 
+                Welcome to Uncommon Hacks, the official hackathon
+                of the University of Chicago! Spend 24 hours working
+                on a project and meeting cool people in this
+                one-of-a-kind experience! In our 2024 edition of Hacks, 
+                we're excited to bring you the biggest event since the 
+                pandemic, including the overnight component that makes 
+                for a truly unforgettable experience.
+
+                Although Hacks will have prizes, we place more emphasis on
+                learning and collaboration than some kind of competitive
+                aspect. So, even if you've never coded before, please do
+                sign up! A successful Hacks team needs people with
+                different skill sets, and if you would like to learn how to
+                code, we'll have workshops to help you do so.
+            </p>
+            <a href="#" onclick="toggle()"> Close? </a>
+        </div>
+        <script type="text/javascript">
+            function toggle(){
+                var blur = document.getElementById("blur");
+                blur.classList.toggle('active');
+                var popup = document.getElementById('popup');
+                popup.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
